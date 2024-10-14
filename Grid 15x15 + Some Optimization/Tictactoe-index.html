@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" type="text/css" href="Tictactoe-style.css">
+    <script type="text/javascript" src="Tictactoe-script.js"></script>
+</head>
+<body class="light-mode">
+    <h1 class="light-mode">Tic Tac Toe</h1>
+    
+    <p id="status" class="light-mode">X's turn</p>
+    
+    <section class="button">
+        <button id="play-again" onclick="playAgain()" class="light-mode">Next Round</button>
+        <button id="reset-game" onclick="resetGame()" class="light-mode">Reset Game</button>
+        <button id="theme-switch" onclick="switchTheme()" class="light-mode">Dark Mode</button>
+    </section>
+
+    <div id="play-area" class="light-mode">
+    </div>
+
+    <section class="score-board">
+        <p class="light-mode" id="X wins">X's Score: 0</p>
+        <p class="light-mode" id="O wins">O's Score: 0</p>
+    </section>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            addButtons();
+        });
+    </script>
+</body>
+</html>
