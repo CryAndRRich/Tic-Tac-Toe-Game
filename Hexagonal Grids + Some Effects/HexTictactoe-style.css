@@ -1,0 +1,112 @@
+body {
+    margin: 5vw 12vw 5vw 12vw;
+    box-shadow: black 0 0 10px;
+    background: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    padding-top: 50px;
+    color: black;
+}
+
+#status {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+#play-area {
+    overflow: hidden;
+    background-color: white;
+    margin-left: 2vw;
+    width: 65vw;
+    padding: 2.5vw 2.5vw 1.5vw 2.5vw;
+}
+
+.hexagon {
+    margin-left: 0.2vw;
+    margin-top: -1vw;
+    width: 4vw;
+    height: 4.62vw;
+    font-size: 2vw;
+    font-weight: bold;
+    float: left;
+    border: 0;
+    background-color: black;
+    cursor: pointer;
+    -webkit-clip-path: polygon(
+        0 25%,
+        50% 0,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0 75%
+    );
+    clip-path: polygon(
+        0 25%,
+        50% 0,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0 75%
+    );
+}
+
+.hexagon.light-mode:hover {
+    background-color: rgb(49, 49, 49) !important;
+}
+
+.button {
+    display: flex;
+    margin-left: 47vw;
+}
+
+.button button {
+    margin-left: 0.5vw;
+    padding: 0.2vw 0.5vw 0.2vw 0.5vw;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 0 15vw;
+    padding-bottom: 0px;
+    color: black;
+}
+
+body.dark-mode {
+    box-shadow: white 0 0 10px;
+    background: black;
+}
+
+h1.dark-mode {
+    color: white;
+}
+
+#status.dark-mode {
+    color: white;
+}
+
+#play-area.dark-mode {
+    background-color: black;
+}
+
+.hexagon.dark-mode {
+    background-color: white;
+}
+
+.hexagon.dark-mode:hover {
+    background-color: rgb(255, 194, 82) !important;
+}
+
+.score-board .dark-mode {
+    color: white;
+}
