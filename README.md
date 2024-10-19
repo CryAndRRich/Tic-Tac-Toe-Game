@@ -1,11 +1,13 @@
 # Tic-Tac-Toe-Game
 
 ## Basic 3x3
-A 3x3 tic-tac-toe game with a basic interface, including a button to switch between **dark mocde** and **light mode**
+A 3x3 tic-tac-toe game with a basic interface, including a button to switch between **dark mode** and **light mode**
 
 The **simplest method** to check for a win is to use a variable `winningPossibilities` in the `js` file to store all **winning positions** and sequentially check if there are three cells in a row (or column, or diagonal) with the same character
 
 Since this is a 3x3 grid, the checking process doesn’t take much time
+
+**Note**: The HTML, CSS, and JS code for **Basic 3x3**, as well as all subsequent variations, were originally inspired by Jothin Kumar’s repository ([tic-tac-toe](https://github.com/Jothin-kumar/tic-tac-toe)). I then developed and modified them according to my own preferences
 
 ## Grid 15x15 + Some Optimization
 Increasing the game board size from 3x3 to 15x15 (or more if desired)
