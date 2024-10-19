@@ -12,17 +12,13 @@ function addButtons() {
         }
 
         playArea.appendChild(button);
-
-        if (i % n === 0 && i < n * n) {
-            playArea.appendChild(document.createElement('br'));
-        }
-        
     }
 }
 
 let currentChr = 'X';
 let XPoint = [];
 let OPoint = [];
+
 let XScore = 0;
 let OScore = 0;
 
@@ -286,9 +282,9 @@ function resetGame() {
 }
 
 window.onload = () => {
-    let squareElements = document.getElementsByClassName('hexagon');
-    for (let i = 0; i < squareElements.length; i++) {
-        new XOHexagon(i % n + 1, Math.floor(i / n) + 1, squareElements[i].id);
+    let hexElements = document.getElementsByClassName('hexagon');
+    for (let i = 0; i < hexElements.length; i++) {
+        new XOHexagon(i % n + 1, Math.floor(i / n) + 1, hexElements[i].id);
     }
 };
 
