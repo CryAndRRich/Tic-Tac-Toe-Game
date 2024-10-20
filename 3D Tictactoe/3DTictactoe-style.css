@@ -1,0 +1,95 @@
+body {
+    margin: 5vw 25vw 5vw 25vw;
+    box-shadow: black 0 0 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5vw;
+    padding-top: 50px;
+    color: black;
+}
+
+#status {
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#play-area {
+    margin-left: 13vw;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 5vw);
+}
+
+.square {
+    transform: skew(-50deg);
+    float: left;
+    width: 4.5vw;
+    height: 3.5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 0.5vw;
+}
+
+.square.light-mode:hover {
+    background-color: rgb(255, 194, 82) !important;
+}
+
+.button {
+    display: flex;
+    margin: 0 13vw;
+}
+
+.button button {
+    justify-content: space-between;
+    width: 8vw;
+    text-align: center;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 0 8vw;
+    padding-bottom: 0px;
+    color: black;
+}
+
+body.dark-mode {
+    box-shadow: white 0 0 10px;
+    background: black;
+}
+
+h1.dark-mode {
+    color: white;
+}
+
+#status.dark-mode {
+    color: white;
+}
+
+#play-area.dark-mode {
+    background-color: black;
+}
+
+.square.dark-mode {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.square.dark-mode:hover {
+    background-color: rgb(49, 49, 49) !important;
+}
+
+.score-board .dark-mode {
+    color: white;
+}

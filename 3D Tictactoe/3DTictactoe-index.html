@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Tic Tac Toe</title>
+
+    <link rel="stylesheet" type="text/css" href="3DTictactoe-style.css">
+    <audio id="audio" src="click.mp3"></audio>
+    <script type="text/javascript" src="3DTictactoe-script.js"></script>
+</head>
+<body class="light-mode">
+    <h1 class="light-mode">Tic Tac Toe - 3D Version</h1>
+    
+    <p id="status" class="light-mode">X's turn</p>
+    
+    <section class="button">
+        <button id="play-again" onclick="playAgain()" class="light-mode">Cancel Round</button>
+        <button id="reset-game" onclick="resetGame()" class="light-mode">Reset Game</button>
+        <button id="theme-switch" onclick="switchTheme()" class="light-mode">Dark Mode</button>
+    </section>
+
+    <section id="play-area" class="light-mode">
+    </section>
+
+    <section class="score-board">
+        <p class="light-mode" id="X wins">X's Score: 0</p>
+        <p class="light-mode" id="O wins">O's Score: 0</p>
+    </section>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            addButtons();
+        });
+    </script>
+</body>
+</html>
