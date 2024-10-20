@@ -14,7 +14,7 @@ Increasing the game board size from 3x3 to 15x15 (or more if desired)
 
 Using a function `addButtons()` to add 15x15 button elements to the `html` file instead of doing it manually like the 3x3 board
 
-Since this is a 15x15 board, change the win condition from 3 consecutive characters in a row (or column, or diagonal) to 5 characters and **optimize** the win-checking method `checkWin()` by checking the row, column, and diagonal containing the newly added character each time a character is added. If 5 consecutive characters are found, **immediately** return a win result
+Since this is a 15x15 board, **change** the win condition from 3 consecutive characters in a row (or column, or diagonal) to 5 characters and **optimize** the win-checking method `checkWin()` by checking the row, column, and diagonal containing the newly added character each time a character is added. If 5 consecutive characters are found, **immediately** return a win result
 
 Adding a `next round` button and `score board` to allow **playing multiple consecutive rounds**
 
@@ -28,3 +28,14 @@ Adjusting the win-checking method `checkWin()` slightly to accommodate the new p
 Adding **sound effects** for each cell click and an effect to **highlight** the hexagon cell when the mouse hovers over it
 
 In the `css` file, change from `px` to `vw` to make the interface look better **regardless** of the screen size of the computer being used
+
+## 3D Tictactoe
+3D version of tic-tac-toe game, also known by the trade name Qubic 
+
+Adding **z-coordinate** in the `XOSquare` class
+
+The **win condition** is adjusted to 3 characters in a row or diagonal line **through** the 3 boards, the `checkWin()` function is **optimized** 
+
+Modifying the `next round` button so it cannot be continued unless the current game is **finished**
+
+**Note:** you can increase the size to 4x4x4 or larger if you like (the functions in the `js` file can be **applied** to larger boards), I keep it 3x3x3 simply because it fits neatly on my computer screen and is easy to see
